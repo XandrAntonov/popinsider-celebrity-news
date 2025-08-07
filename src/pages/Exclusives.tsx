@@ -93,7 +93,6 @@ const Exclusives = () => {
                       Conversaciones íntimas con celebrities que no hablan con nadie más. 
                       Revelaciones, confesiones y secretos que marcan la diferencia.
                     </p>
-                    <Button variant="outline" size="sm">Ver Entrevistas</Button>
                   </div>
                 </div>
               </div>
@@ -107,7 +106,6 @@ const Exclusives = () => {
                       Reportajes en profundidad que van más allá de la superficie. 
                       Investigaciones que revelan la verdad detrás de los rumores.
                     </p>
-                    <Button variant="outline" size="sm">Leer Reportajes</Button>
                   </div>
                 </div>
               </div>
@@ -121,7 +119,6 @@ const Exclusives = () => {
                       Información privilegiada sobre proyectos secretos, casting, 
                       romances y decisiones antes que nadie.
                     </p>
-                    <Button variant="outline" size="sm">Ver Adelantos</Button>
                   </div>
                 </div>
               </div>
@@ -151,9 +148,6 @@ const Exclusives = () => {
                 }}
               >
                 Enviar Tip Confidencial
-              </Button>
-              <Button size="lg" variant="outline">
-                Contactar Redacción
               </Button>
             </div>
           </div>
