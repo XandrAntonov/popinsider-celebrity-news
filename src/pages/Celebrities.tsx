@@ -2,9 +2,19 @@
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import { Button } from "@/components/ui/button";
+import { Link } from "react-router-dom";
+import { articles } from "@/data/articles";
 import { Star, Heart, Users, TrendingUp } from "lucide-react";
 
 const Celebrities = () => {
+  // Получаем статьи для каждой категории знаменитостей
+  const actorsArticle = articles.find(a => a.title.includes('Elena Rivera'));
+  const singersArticle = articles.find(a => a.title.includes('Aitana'));
+  const tvArticle = articles.find(a => a.title.includes('Pilar Rubio'));
+  const sportsArticle = articles.find(a => a.title.includes('Georgina'));
+  const royaltyArticle = articles.find(a => a.title.includes('Georgina'));
+  const businessArticle = articles.find(a => a.title.includes('Miguel Herrán'));
+
   return (
     <div className="min-h-screen bg-background">
       <Header />
@@ -56,42 +66,54 @@ const Celebrities = () => {
                 <p className="text-muted-foreground mb-4">
                   Las estrellas más brillantes del cine y la televisión española
                 </p>
-                <Button variant="outline" size="sm">Ver más</Button>
+                <Link to={actorsArticle ? `/articulo/${actorsArticle.id}` : '/'}> 
+                  <Button variant="outline" size="sm">Ver más</Button>
+                </Link>
               </div>
               <div className="bg-card border rounded-2xl p-6 hover:shadow-lg transition-all">
                 <h3 className="font-semibold text-xl mb-3">🎵 Cantantes</h3>
                 <p className="text-muted-foreground mb-4">
                   Los artistas musicales que marcan tendencia en España
                 </p>
-                <Button variant="outline" size="sm">Ver más</Button>
+                <Link to={singersArticle ? `/articulo/${singersArticle.id}` : '/'}>
+                  <Button variant="outline" size="sm">Ver más</Button>
+                </Link>
               </div>
               <div className="bg-card border rounded-2xl p-6 hover:shadow-lg transition-all">
                 <h3 className="font-semibold text-xl mb-3">📺 TV</h3>
                 <p className="text-muted-foreground mb-4">
                   Presentadores y personalidades de la televisión
                 </p>
-                <Button variant="outline" size="sm">Ver más</Button>
+                <Link to={tvArticle ? `/articulo/${tvArticle.id}` : '/'}>
+                  <Button variant="outline" size="sm">Ver más</Button>
+                </Link>
               </div>
               <div className="bg-card border rounded-2xl p-6 hover:shadow-lg transition-all">
                 <h3 className="font-semibold text-xl mb-3">⚽ Deportistas</h3>
                 <p className="text-muted-foreground mb-4">
                   Los atletas españoles más reconocidos mundialmente
                 </p>
-                <Button variant="outline" size="sm">Ver más</Button>
+                <Link to={sportsArticle ? `/articulo/${sportsArticle.id}` : '/'}>
+                  <Button variant="outline" size="sm">Ver más</Button>
+                </Link>
               </div>
               <div className="bg-card border rounded-2xl p-6 hover:shadow-lg transition-all">
                 <h3 className="font-semibold text-xl mb-3">👑 Realeza</h3>
                 <p className="text-muted-foreground mb-4">
                   Noticias y eventos de la familia real española
                 </p>
-                <Button variant="outline" size="sm">Ver más</Button>
+                <Link to={royaltyArticle ? `/articulo/${royaltyArticle.id}` : '/'}>
+                  <Button variant="outline" size="sm">Ver más</Button>
+                </Link>
               </div>
               <div className="bg-card border rounded-2xl p-6 hover:shadow-lg transition-all">
                 <h3 className="font-semibold text-xl mb-3">💼 Empresarios</h3>
                 <p className="text-muted-foreground mb-4">
                   Los magnates y emprendedores más influyentes
                 </p>
-                <Button variant="outline" size="sm">Ver más</Button>
+                <Link to={businessArticle ? `/articulo/${businessArticle.id}` : '/'}>
+                  <Button variant="outline" size="sm">Ver más</Button>
+                </Link>
               </div>
             </div>
           </div>
