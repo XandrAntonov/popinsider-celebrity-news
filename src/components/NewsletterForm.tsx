@@ -56,7 +56,7 @@ const NewsletterForm = ({
             value={email}
             onChange={(e) => setEmail(e.target.value)}
             required
-            className={`flex-1 ${isHero ? "h-12 text-lg" : ""}`}
+            className={`flex-1 text-black ${isHero ? "h-12 text-lg" : ""}`}
           />
           <Button
             type="submit"
