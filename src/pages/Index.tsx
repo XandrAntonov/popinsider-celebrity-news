@@ -64,7 +64,7 @@ const Index = () => {
           {/* Sidebar */}
           <div className="space-y-8">
             {/* Newsletter Signup */}
-            <div className="sticky top-20">
+            <div className="sticky top-20" id="newsletter-signup">
               <NewsletterForm 
                 variant="sidebar"
                 title="¡No te pierdas nada!"

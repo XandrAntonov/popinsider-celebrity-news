@@ -44,7 +44,19 @@ const Header = () => {
             <Button variant="ghost" size="icon">
               <Search className="h-5 w-5" />
             </Button>
-            <Button variant="cta" className="cta-shadow">
+            <Button 
+              variant="cta" 
+              className="cta-shadow"
+              onClick={() => {
+                const newsletterElement = document.getElementById('newsletter-signup');
+                if (newsletterElement) {
+                  newsletterElement.scrollIntoView({ behavior: 'smooth' });
+                } else {
+                  // Si estamos en una página sin newsletter, ir a la página principal
+                  window.location.href = '/#newsletter-signup';
+                }
+              }}
+            >
               Suscríbete Gratis
             </Button>
           </div>
@@ -79,7 +91,18 @@ const Header = () => {
               <a href="#" className="text-foreground hover:text-primary transition-fast font-medium">
                 Contacto
               </a>
-              <Button variant="cta" className="cta-shadow w-full">
+              <Button 
+                variant="cta" 
+                className="cta-shadow w-full"
+                onClick={() => {
+                  const newsletterElement = document.getElementById('newsletter-signup');
+                  if (newsletterElement) {
+                    newsletterElement.scrollIntoView({ behavior: 'smooth' });
+                  } else {
+                    window.location.href = '/#newsletter-signup';
+                  }
+                }}
+              >
                 Suscríbete Gratis
               </Button>
             </div>
