@@ -32,10 +32,10 @@ const Footer = () => {
             <h4 className="font-semibold mb-4">Navegación</h4>
             <ul className="space-y-2 text-sm">
               <li><Link to="/" className="text-muted-foreground hover:text-primary transition-fast">Inicio</Link></li>
-              <li><a href="#celebridades" className="text-muted-foreground hover:text-primary transition-fast">Celebridades</a></li>
-              <li><a href="#escandalos" className="text-muted-foreground hover:text-primary transition-fast">Escándalos</a></li>
-              <li><a href="#exclusivas" className="text-muted-foreground hover:text-primary transition-fast">Exclusivas</a></li>
-              <li><a href="#archivo" className="text-muted-foreground hover:text-primary transition-fast">Archivo</a></li>
+              <li><Link to="/celebridades" className="text-muted-foreground hover:text-primary transition-fast">Celebridades</Link></li>
+              <li><Link to="/escandalos" className="text-muted-foreground hover:text-primary transition-fast">Escándalos</Link></li>
+              <li><Link to="/exclusivas" className="text-muted-foreground hover:text-primary transition-fast">Exclusivas</Link></li>
+              <li><Link to="/archivo" className="text-muted-foreground hover:text-primary transition-fast">Archivo</Link></li>
             </ul>
           </div>
 

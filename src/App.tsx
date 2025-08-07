@@ -1,3 +1,4 @@
+
 import { Toaster } from "@/components/ui/toaster";
 import { Toaster as Sonner } from "@/components/ui/sonner";
 import { TooltipProvider } from "@/components/ui/tooltip";
@@ -11,6 +12,10 @@ import Contact from "./pages/Contact";
 import Cookies from "./pages/Cookies";
 import Terms from "./pages/Terms";
 import Legal from "./pages/Legal";
+import Celebrities from "./pages/Celebrities";
+import Scandals from "./pages/Scandals";
+import Exclusives from "./pages/Exclusives";
+import Archive from "./pages/Archive";
 import CookieBanner from "./components/CookieBanner";
 
 const queryClient = new QueryClient();
@@ -23,6 +28,10 @@ const App = () => (
       <BrowserRouter>
         <Routes>
           <Route path="/" element={<Index />} />
+          <Route path="/celebridades" element={<Celebrities />} />
+          <Route path="/escandalos" element={<Scandals />} />
+          <Route path="/exclusivas" element={<Exclusives />} />
+          <Route path="/archivo" element={<Archive />} />
           <Route path="/gracias" element={<ThankYou />} />
           <Route path="/privacidad" element={<Privacy />} />
           <Route path="/contacto" element={<Contact />} />

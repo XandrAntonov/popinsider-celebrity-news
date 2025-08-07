@@ -23,21 +23,21 @@ const Header = () => {
 
           {/* Desktop Navigation */}
           <nav className="hidden md:flex items-center space-x-8">
-            <a href="#" className="text-foreground hover:text-primary transition-fast font-medium">
+            <Link to="/" className="text-foreground hover:text-primary transition-fast font-medium">
               Inicio
-            </a>
-            <a href="#" className="text-foreground hover:text-primary transition-fast font-medium">
+            </Link>
+            <Link to="/celebridades" className="text-foreground hover:text-primary transition-fast font-medium">
               Celebridades
-            </a>
-            <a href="#" className="text-foreground hover:text-primary transition-fast font-medium">
+            </Link>
+            <Link to="/escandalos" className="text-foreground hover:text-primary transition-fast font-medium">
               Escándalos
-            </a>
-            <a href="#" className="text-foreground hover:text-primary transition-fast font-medium">
+            </Link>
+            <Link to="/exclusivas" className="text-foreground hover:text-primary transition-fast font-medium">
               Exclusivas
-            </a>
-            <a href="#" className="text-foreground hover:text-primary transition-fast font-medium">
+            </Link>
+            <Link to="/contacto" className="text-foreground hover:text-primary transition-fast font-medium">
               Contacto
-            </a>
+            </Link>
           </nav>
 
           {/* Search & CTA */}
@@ -77,21 +77,21 @@ const Header = () => {
         {isMenuOpen && (
           <div className="md:hidden py-4 border-t">
             <div className="flex flex-col space-y-4">
-              <a href="#" className="text-foreground hover:text-primary transition-fast font-medium">
+              <Link to="/" className="text-foreground hover:text-primary transition-fast font-medium">
                 Inicio
-              </a>
-              <a href="#" className="text-foreground hover:text-primary transition-fast font-medium">
+              </Link>
+              <Link to="/celebridades" className="text-foreground hover:text-primary transition-fast font-medium">
                 Celebridades
-              </a>
-              <a href="#" className="text-foreground hover:text-primary transition-fast font-medium">
+              </Link>
+              <Link to="/escandalos" className="text-foreground hover:text-primary transition-fast font-medium">
                 Escándalos
-              </a>
-              <a href="#" className="text-foreground hover:text-primary transition-fast font-medium">
+              </Link>
+              <Link to="/exclusivas" className="text-foreground hover:text-primary transition-fast font-medium">
                 Exclusivas
-              </a>
-              <a href="#" className="text-foreground hover:text-primary transition-fast font-medium">
+              </Link>
+              <Link to="/contacto" className="text-foreground hover:text-primary transition-fast font-medium">
                 Contacto
-              </a>
+              </Link>
               <Button 
                 variant="cta" 
                 className="cta-shadow w-full"
