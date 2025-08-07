@@ -55,7 +55,11 @@ const Index = () => {
 
             {/* Load more button */}
             <div className="text-center pt-8">
-              <Button variant="outline" size="lg">
+              <Button 
+                variant="outline" 
+                size="lg"
+                onClick={() => window.location.href = '/celebridades'}
+              >
                 Ver más noticias
               </Button>
             </div>
