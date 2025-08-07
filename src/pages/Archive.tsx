@@ -207,7 +207,18 @@ const Archive = () => {
               Nuestro equipo puede ayudarte a encontrar esa noticia o información específica 
               que estás buscando en nuestro extenso archivo.
             </p>
-            <Button size="lg" variant="cta">
+            <Button 
+              size="lg" 
+              variant="cta"
+              onClick={() => {
+                const newsletterElement = document.getElementById('newsletter-signup');
+                if (newsletterElement) {
+                  newsletterElement.scrollIntoView({ behavior: 'smooth' });
+                } else {
+                  window.location.href = '/#newsletter-signup';
+                }
+              }}
+            >
               Solicitar Búsqueda Personalizada
             </Button>
           </div>

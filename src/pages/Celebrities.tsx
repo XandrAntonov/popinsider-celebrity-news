@@ -105,7 +105,18 @@ const Celebrities = () => {
               Contáctanos y te mantendremos informado sobre las últimas noticias 
               de la celebridad que más te interese
             </p>
-            <Button size="lg" variant="cta">
+            <Button 
+              size="lg" 
+              variant="cta"
+              onClick={() => {
+                const newsletterElement = document.getElementById('newsletter-signup');
+                if (newsletterElement) {
+                  newsletterElement.scrollIntoView({ behavior: 'smooth' });
+                } else {
+                  window.location.href = '/#newsletter-signup';
+                }
+              }}
+            >
               Solicitar Cobertura
             </Button>
           </div>

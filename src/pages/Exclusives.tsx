@@ -36,7 +36,19 @@ const Exclusives = () => {
               Suscríbete a nuestro newsletter para recibir contenido exclusivo que no publicamos en la web. 
               Entrevistas privadas, fotos inéditas y primicias absolutas.
             </p>
-            <Button size="lg" variant="cta" className="cta-shadow">
+            <Button 
+              size="lg" 
+              variant="cta" 
+              className="cta-shadow"
+              onClick={() => {
+                const newsletterElement = document.getElementById('newsletter-signup');
+                if (newsletterElement) {
+                  newsletterElement.scrollIntoView({ behavior: 'smooth' });
+                } else {
+                  window.location.href = '/#newsletter-signup';
+                }
+              }}
+            >
               Acceso Exclusivo
             </Button>
           </div>
@@ -126,7 +138,18 @@ const Exclusives = () => {
               que nuestros lectores deberían conocer, contáctanos de forma confidencial.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Button size="lg" variant="cta">
+              <Button 
+                size="lg" 
+                variant="cta"
+                onClick={() => {
+                  const newsletterElement = document.getElementById('newsletter-signup');
+                  if (newsletterElement) {
+                    newsletterElement.scrollIntoView({ behavior: 'smooth' });
+                  } else {
+                    window.location.href = '/#newsletter-signup';
+                  }
+                }}
+              >
                 Enviar Tip Confidencial
               </Button>
               <Button size="lg" variant="outline">

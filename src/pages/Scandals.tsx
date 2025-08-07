@@ -130,7 +130,18 @@ const Scandals = () => {
               Explora los escándalos más impactantes de los últimos años, 
               organizados cronológicamente para que no te pierdas ningún detalle.
             </p>
-            <Button size="lg" variant="cta">
+            <Button 
+              size="lg" 
+              variant="cta"
+              onClick={() => {
+                const newsletterElement = document.getElementById('newsletter-signup');
+                if (newsletterElement) {
+                  newsletterElement.scrollIntoView({ behavior: 'smooth' });
+                } else {
+                  window.location.href = '/#newsletter-signup';
+                }
+              }}
+            >
               Ver Cronología Completa
             </Button>
           </div>
