@@ -49,9 +49,6 @@ const Scandals = () => {
                 <p className="text-muted-foreground mb-4">
                   Mantente al día con las polémicas que están sucediendo ahora mismo
                 </p>
-                <Button variant="outline" size="sm" className="border-red-200 text-red-700">
-                  Ver Actualizaciones
-                </Button>
               </div>
               <div className="bg-gradient-to-br from-orange-50 to-yellow-50 border border-orange-100 rounded-2xl p-6">
                 <div className="flex items-center gap-2 mb-3">
@@ -62,9 +59,6 @@ const Scandals = () => {
                 <p className="text-muted-foreground mb-4">
                   Los escándalos que más están comentando nuestros lectores
                 </p>
-                <Button variant="outline" size="sm" className="border-orange-200 text-orange-700">
-                  Explorar
-                </Button>
               </div>
             </div>
           </div>
@@ -80,42 +74,36 @@ const Scandals = () => {
                 <p className="text-muted-foreground mb-4">
                   Separaciones, triángulos amorosos y relaciones polémicas
                 </p>
-                <Button variant="outline" size="sm">Ver más</Button>
               </div>
               <div className="bg-card border rounded-2xl p-6 hover:shadow-lg transition-all">
                 <h3 className="font-semibold text-xl mb-3">💰 Dinero</h3>
                 <p className="text-muted-foreground mb-4">
                   Problemas financieros, deudas y disputas económicas
                 </p>
-                <Button variant="outline" size="sm">Ver más</Button>
               </div>
               <div className="bg-card border rounded-2xl p-6 hover:shadow-lg transition-all">
                 <h3 className="font-semibold text-xl mb-3">🏛️ Legales</h3>
                 <p className="text-muted-foreground mb-4">
                   Demandas, juicios y problemas con la justicia
                 </p>
-                <Button variant="outline" size="sm">Ver más</Button>
               </div>
               <div className="bg-card border rounded-2xl p-6 hover:shadow-lg transition-all">
                 <h3 className="font-semibold text-xl mb-3">📱 Redes Sociales</h3>
                 <p className="text-muted-foreground mb-4">
                   Polémicas nacidas en Instagram, Twitter y TikTok
                 </p>
-                <Button variant="outline" size="sm">Ver más</Button>
               </div>
               <div className="bg-card border rounded-2xl p-6 hover:shadow-lg transition-all">
                 <h3 className="font-semibold text-xl mb-3">🎭 Profesionales</h3>
                 <p className="text-muted-foreground mb-4">
                   Conflictos laborales y disputas en el mundo del espectáculo
                 </p>
-                <Button variant="outline" size="sm">Ver más</Button>
               </div>
               <div className="bg-card border rounded-2xl p-6 hover:shadow-lg transition-all">
                 <h3 className="font-semibold text-xl mb-3">👨‍👩‍👧‍👦 Familiares</h3>
                 <p className="text-muted-foreground mb-4">
                   Disputas familiares y problemas de herencias
                 </p>
-                <Button variant="outline" size="sm">Ver más</Button>
               </div>
             </div>
           </div>
