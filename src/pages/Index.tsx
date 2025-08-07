@@ -5,6 +5,7 @@ import ArticleCard from "@/components/ArticleCard";
 import NewsletterForm from "@/components/NewsletterForm";
 import { Separator } from "@/components/ui/separator";
 import { Button } from "@/components/ui/button";
+import { Link } from "react-router-dom";
 import { articles } from "@/data/articles";
 import { TrendingUp, Clock, Star } from "lucide-react";
 
@@ -86,19 +87,21 @@ const Index = () => {
               </div>
               <div className="space-y-4">
                 {sidebarArticles.map((article, index) => (
-                  <div key={article.id} className="flex gap-3 group cursor-pointer">
-                    <div className="w-8 h-8 bg-primary text-white rounded-full flex items-center justify-center text-sm font-bold flex-shrink-0">
-                      {index + 1}
+                  <Link key={article.id} to={`/articulo/${article.id}`}>
+                    <div className="flex gap-3 group cursor-pointer hover:bg-secondary/50 p-2 rounded-lg transition-fast">
+                      <div className="w-8 h-8 bg-primary text-white rounded-full flex items-center justify-center text-sm font-bold flex-shrink-0">
+                        {index + 1}
+                      </div>
+                      <div className="flex-1">
+                        <h4 className="font-medium leading-tight group-hover:text-primary transition-fast line-clamp-2">
+                          {article.title}
+                        </h4>
+                        <p className="text-sm text-muted-foreground mt-1">
+                          {article.readTime} min • {article.category}
+                        </p>
+                      </div>
                     </div>
-                    <div className="flex-1">
-                      <h4 className="font-medium leading-tight group-hover:text-primary transition-fast line-clamp-2">
-                        {article.title}
-                      </h4>
-                      <p className="text-sm text-muted-foreground mt-1">
-                        {article.readTime} min • {article.category}
-                      </p>
-                    </div>
-                  </div>
+                  </Link>
                 ))}
               </div>
             </div>
