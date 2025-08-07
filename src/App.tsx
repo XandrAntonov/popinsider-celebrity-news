@@ -16,6 +16,7 @@ import Celebrities from "./pages/Celebrities";
 import Scandals from "./pages/Scandals";
 import Exclusives from "./pages/Exclusives";
 import Archive from "./pages/Archive";
+import Article from "./pages/Article";
 import CookieBanner from "./components/CookieBanner";
 
 const queryClient = new QueryClient();
@@ -38,6 +39,7 @@ const App = () => (
           <Route path="/cookies" element={<Cookies />} />
           <Route path="/terminos" element={<Terms />} />
           <Route path="/aviso-legal" element={<Legal />} />
+          <Route path="/articulo/:id" element={<Article />} />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />
         </Routes>
