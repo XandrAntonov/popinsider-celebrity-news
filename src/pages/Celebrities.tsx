@@ -31,30 +31,6 @@ const Celebrities = () => {
             </p>
           </div>
 
-          {/* Stats Section */}
-          <div className="grid grid-cols-1 md:grid-cols-4 gap-6 mb-12">
-            <div className="bg-gradient-subtle rounded-2xl p-6 text-center">
-              <Star className="h-8 w-8 text-primary mx-auto mb-3" />
-              <h3 className="text-2xl font-bold mb-1">500+</h3>
-              <p className="text-muted-foreground">Celebridades</p>
-            </div>
-            <div className="bg-gradient-subtle rounded-2xl p-6 text-center">
-              <Heart className="h-8 w-8 text-primary mx-auto mb-3" />
-              <h3 className="text-2xl font-bold mb-1">1M+</h3>
-              <p className="text-muted-foreground">Fans</p>
-            </div>
-            <div className="bg-gradient-subtle rounded-2xl p-6 text-center">
-              <Users className="h-8 w-8 text-primary mx-auto mb-3" />
-              <h3 className="text-2xl font-bold mb-1">200K+</h3>
-              <p className="text-muted-foreground">Suscriptores</p>
-            </div>
-            <div className="bg-gradient-subtle rounded-2xl p-6 text-center">
-              <TrendingUp className="h-8 w-8 text-primary mx-auto mb-3" />
-              <h3 className="text-2xl font-bold mb-1">24/7</h3>
-              <p className="text-muted-foreground">Cobertura</p>
-            </div>
-          </div>
-
           {/* Categories Section */}
           <div className="mb-12">
             <h2 className="font-heading text-3xl font-bold mb-8 text-center">
