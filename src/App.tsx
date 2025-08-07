@@ -9,6 +9,8 @@ import ThankYou from "./pages/ThankYou";
 import Privacy from "./pages/Privacy";
 import Contact from "./pages/Contact";
 import Cookies from "./pages/Cookies";
+import Terms from "./pages/Terms";
+import Legal from "./pages/Legal";
 import CookieBanner from "./components/CookieBanner";
 
 const queryClient = new QueryClient();
@@ -25,6 +27,8 @@ const App = () => (
           <Route path="/privacidad" element={<Privacy />} />
           <Route path="/contacto" element={<Contact />} />
           <Route path="/cookies" element={<Cookies />} />
+          <Route path="/terminos" element={<Terms />} />
+          <Route path="/aviso-legal" element={<Legal />} />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />
         </Routes>

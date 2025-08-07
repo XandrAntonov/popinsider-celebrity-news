@@ -1,4 +1,5 @@
 import { Separator } from "@/components/ui/separator";
+import { Link } from "react-router-dom";
 
 const Footer = () => {
   return (
@@ -30,11 +31,11 @@ const Footer = () => {
           <div>
             <h4 className="font-semibold mb-4">Navegación</h4>
             <ul className="space-y-2 text-sm">
-              <li><a href="#" className="text-muted-foreground hover:text-primary transition-fast">Inicio</a></li>
-              <li><a href="#" className="text-muted-foreground hover:text-primary transition-fast">Celebridades</a></li>
-              <li><a href="#" className="text-muted-foreground hover:text-primary transition-fast">Escándalos</a></li>
-              <li><a href="#" className="text-muted-foreground hover:text-primary transition-fast">Exclusivas</a></li>
-              <li><a href="#" className="text-muted-foreground hover:text-primary transition-fast">Archivo</a></li>
+              <li><Link to="/" className="text-muted-foreground hover:text-primary transition-fast">Inicio</Link></li>
+              <li><a href="#celebridades" className="text-muted-foreground hover:text-primary transition-fast">Celebridades</a></li>
+              <li><a href="#escandalos" className="text-muted-foreground hover:text-primary transition-fast">Escándalos</a></li>
+              <li><a href="#exclusivas" className="text-muted-foreground hover:text-primary transition-fast">Exclusivas</a></li>
+              <li><a href="#archivo" className="text-muted-foreground hover:text-primary transition-fast">Archivo</a></li>
             </ul>
           </div>
 
@@ -42,11 +43,11 @@ const Footer = () => {
           <div>
             <h4 className="font-semibold mb-4">Legal</h4>
             <ul className="space-y-2 text-sm">
-              <li><a href="/privacidad" className="text-muted-foreground hover:text-primary transition-fast">Política de Privacidad</a></li>
-              <li><a href="/cookies" className="text-muted-foreground hover:text-primary transition-fast">Política de Cookies</a></li>
-              <li><a href="/terminos" className="text-muted-foreground hover:text-primary transition-fast">Términos de Uso</a></li>
-              <li><a href="/contacto" className="text-muted-foreground hover:text-primary transition-fast">Contacto</a></li>
-              <li><a href="/aviso-legal" className="text-muted-foreground hover:text-primary transition-fast">Aviso Legal</a></li>
+              <li><Link to="/privacidad" className="text-muted-foreground hover:text-primary transition-fast">Política de Privacidad</Link></li>
+              <li><Link to="/cookies" className="text-muted-foreground hover:text-primary transition-fast">Política de Cookies</Link></li>
+              <li><Link to="/terminos" className="text-muted-foreground hover:text-primary transition-fast">Términos de Uso</Link></li>
+              <li><Link to="/contacto" className="text-muted-foreground hover:text-primary transition-fast">Contacto</Link></li>
+              <li><Link to="/aviso-legal" className="text-muted-foreground hover:text-primary transition-fast">Aviso Legal</Link></li>
             </ul>
           </div>
 
