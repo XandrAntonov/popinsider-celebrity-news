@@ -37,7 +37,7 @@ const Exclusives = () => {
               Entrevistas privadas, fotos inéditas y primicias absolutas.
             </p>
             <Button size="lg" variant="cta" className="cta-shadow">
-              Acceso Exclusivo Gratis
+              Acceso Exclusivo
             </Button>
           </div>
 

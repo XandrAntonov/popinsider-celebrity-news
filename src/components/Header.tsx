@@ -58,7 +58,7 @@ const Header = () => {
                 }
               }}
             >
-              Suscríbete Gratis
+              Suscríbete
             </Button>
           </div>
 
@@ -104,7 +104,7 @@ const Header = () => {
                   }
                 }}
               >
-                Suscríbete Gratis
+                Suscríbete
               </Button>
             </div>
           </div>

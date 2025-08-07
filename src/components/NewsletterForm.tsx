@@ -64,7 +64,7 @@ const NewsletterForm = ({
             disabled={isLoading}
             className={`cta-shadow ${isHero ? "h-12 px-8 text-lg font-semibold" : ""} ${isSidebar ? "w-full" : ""}`}
           >
-            {isLoading ? "Suscribiendo..." : "Suscríbete Gratis"}
+            {isLoading ? "Suscribiendo..." : "Suscríbete"}
           </Button>
         </div>
         
