@@ -1,6 +1,7 @@
 import { Button } from "@/components/ui/button";
 import { Search, Menu } from "lucide-react";
 import { useState } from "react";
+import { Link } from "react-router-dom";
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -10,7 +11,7 @@ const Header = () => {
       <div className="container mx-auto px-4">
         <div className="flex items-center justify-between h-16">
           {/* Logo */}
-          <div className="flex items-center space-x-2">
+          <Link to="/" className="flex items-center space-x-2 hover:opacity-80 transition-fast">
             <div className="w-8 h-8 gradient-red rounded-full flex items-center justify-center">
               <span className="text-white font-bold text-sm">P</span>
             </div>
@@ -18,7 +19,7 @@ const Header = () => {
               PopInsider
               <span className="text-primary">.net</span>
             </h1>
-          </div>
+          </Link>
 
           {/* Desktop Navigation */}
           <nav className="hidden md:flex items-center space-x-8">
