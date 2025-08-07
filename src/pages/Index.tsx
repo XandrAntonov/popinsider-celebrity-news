@@ -139,7 +139,17 @@ const Index = () => {
           <p className="text-xl mb-8 opacity-90">
             Únete a nuestra comunidad VIP y recibe contenido exclusivo antes que nadie
           </p>
-          <Button variant="secondary" size="lg" className="cta-shadow">
+          <Button 
+            variant="secondary" 
+            size="lg" 
+            className="cta-shadow"
+            onClick={() => {
+              const newsletterElement = document.getElementById('newsletter-signup');
+              if (newsletterElement) {
+                newsletterElement.scrollIntoView({ behavior: 'smooth' });
+              }
+            }}
+          >
             Suscríbete Premium
           </Button>
         </section>
